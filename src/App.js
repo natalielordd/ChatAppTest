@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// export default App;
+import React from 'react'
+import {ChatEngine} from 'react-chat-engine';
+import DirectMessaging from './DirectMessaging';
+
+//Using arrow function component
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ChatEngine
+      userName='joebruin'//Put your userName instead
+      projectID = 'e57e3b44-5d54-4a60-a988-703a68727184'// Your project id goes here
+      userSecret='foobar'// Replace with your secret key
+    />
+  )
 }
 
-export default App;
+export default App
