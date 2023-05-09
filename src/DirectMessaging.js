@@ -39,10 +39,10 @@ const DirectMessaging = () => {
     return(
         <ChatEngine
             height='100vh'
-            userName='joebruin'
+            userName='your-username'
             // Accessing the stored environment variables in .env file
-            userSecret='foobar'
-            projectID='e57e3b44-5d54-4a60-a988-703a68727184'
+            userSecret='your-secret'
+            projectID='your-projectID'
             displayNewChatInterface={(credentials) => displayChatInterface(credentials)}
             />
     )
